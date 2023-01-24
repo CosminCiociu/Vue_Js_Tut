@@ -19,7 +19,7 @@
     <section id="events">
       <h2>Events in Action</h2>
       <button v-on:click="addValue(5)">Add</button>
-  <button v-on:click="reduceValue(5)">Remove</button>
+  <button @click="reduceValue(5)">Remove</button>
   <input v-model="name" v-on:keyup.enter="confirmInput" type="text">
   <input v-model="lastName" type="text">
   <p>My name is {{ fullName }}</p>
