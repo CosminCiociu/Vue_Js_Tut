@@ -21,7 +21,8 @@
       <button v-on:click="addValue(5)">Add</button>
   <button v-on:click="reduceValue(5)">Remove</button>
   <input v-model="name" v-on:keyup.enter="confirmInput" type="text">
-  <p>My name is {{ confirmedName }}</p>
+  <input v-model="lastName" type="text">
+  <p>My name is {{ fullName }}</p>
   <p v-once>Starting counter: {{ counter }}</p>
   <p>Result: {{ counter }}</p>
   <button v-on:click="resetInput">Reset input</button>
