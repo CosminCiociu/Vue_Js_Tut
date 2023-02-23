@@ -6,6 +6,7 @@ export default {
   namespace: true,
   state() {
     return {
+      lastFetch: null,
       coaches: [
         {
           id: 'c1',
